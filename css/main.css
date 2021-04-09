@@ -24,6 +24,23 @@ body {
 - *Corner-radii:* `3em`, `6px`
  */
 
+main {
+  margin: 1rem;
+}
+
+h2 {
+  font-family: Oswald, sans-serif;
+  margin: 0;
+  color: #6f00e7;
+  font-size: 2rem;
+}
+
+p {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-size: 1.4rem;
+}
+
  ol {
    list-style-type: none;
    padding: 0;
@@ -33,3 +50,20 @@ body {
    grid-template-columns: 1fr 1fr;
    gap: 1rem;
  }
+
+ol > li {
+  border: 3px solid #987ffa;
+  padding: 1rem;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 + img {
+  order: -1;
+  max-width: 15em;
+  margin-bottom: 1.5rem;
+}
