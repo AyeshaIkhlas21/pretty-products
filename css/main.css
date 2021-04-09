@@ -12,18 +12,6 @@ body {
   margin: 0;
 }
 
-/*
-- *Typefaces:* `Karma`, `Oswald`
-- *Text sizes:* `1.4rem`, `2rem`
-- *Line-heights:* `1.5`
-- *Colours:* `#6f00e7`, `#987ffa`, `#000`
-- *Gaps:* `1rem`
-- *Margins:* `.25em`, `1.5rem`
-- *Paddings:* `.5em 1.5em .7em`, `.25em`, `1rem`
-- *Border thicknesses:* `3px`
-- *Corner-radii:* `3em`, `6px`
- */
-
 main {
   margin: 1rem;
 }
@@ -41,21 +29,19 @@ p {
   font-size: 1.4rem;
 }
 
- ol {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
-
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 1rem;
- }
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
 
 ol > li {
-  border: 3px solid #987ffa;
   padding: 1rem;
+  border: 3px solid #987ffa;
   border-radius: 6px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +58,6 @@ ol ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,4 +72,22 @@ ol ul {
   font-family: Oswald, sans-serif;
   padding: .5em 1.5em .7em;
   font-weight: bold;
+}
+
+ul li {
+  padding: 0 .25em;
+}
+
+ul li:first-child {
+  margin-right: auto;
+}
+
+ul a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+ul a img {
+  margin-right: .25em;
 }
